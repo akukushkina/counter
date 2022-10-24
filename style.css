@@ -1,0 +1,38 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.counter {
+    color: #000;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000;
+    background-color: #ccc;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: transform ease;
+}
+
+button:not(:last-child){
+    margin-right: 10px;
+}
+
+button:active {
+    transform:translateY(2px);
+}
